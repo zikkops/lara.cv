@@ -1,0 +1,149 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#222828;
+  --secondary-color:#ea4a4c;
+}
+body{
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif ;
+}
+
+/* navbar */
+#main-nav .container{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  background: var(--primary-color);
+}
+#main-nav .container ul{
+  display: flex;
+  color: white;
+  list-style: none;
+}
+#main-nav .container p{
+  display: flex;
+color: white;
+right: 0;
+margin-left: 8rem;
+}
+#main-nav .container .contact-me{
+  padding: 1rem 0;
+}
+#main-nav .container ul{
+  margin-left:5rem;
+}
+
+#main-nav .container ul li a{
+  display: inherit;
+  text-decoration: none;
+  color:white;
+  text-align: center;
+  border-right: white solid 1px;
+  /* padding-top:0.25rem ; */
+  padding:0 1rem ;
+  /* border-right: solid white dotted ; */
+  margin: 1rem 0;
+  
+
+
+}
+
+#main-nav .container ul li:hover{
+  background: #3f4d45;
+  color: white;
+  }
+#main-nav .container ul li.current{
+  background: #3f4d45;
+  color: white;
+  font-weight: bold;
+ }
+
+/* body main home */
+ #main-home{
+   background: url('/img/img1.JPG') center center/cover;
+   height: 85vh;
+ }
+
+ #main-home .container{
+   padding: 4rem;
+   padding-top: 6rem;
+
+ }
+ #main-home .container img{
+   display: inline-block;
+   width: 41%;
+   margin-bottom: 3rem;
+ }
+ #main-home .container a{
+   display: inline-block;
+   text-decoration: none;
+   text-align: center;
+   color: white;
+   border: 1px white solid;
+   padding: 1rem;
+   margin-left: -31rem;
+   margin-top: 18rem;
+ }
+ #main-home .container a:hover{
+   cursor: pointer;
+   background: rgba(255,255,255,0.5);
+   color: white;
+
+ }
+
+
+
+ /* about */
+#main-about{
+  overflow: auto;
+}
+
+ #main-about-img img{
+   width: 100%;
+   margin-bottom: -0.3rem;
+ } 
+
+
+
+ /* footer */
+ 
+
+#footer{
+  background:#192525;
+}
+#footer .container{
+  display: flex;
+  height: 7vh;
+}
+#footer .copyright{
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  padding-left: 5rem;
+}
+#footer .container .social{
+  position: absolute;
+  right: 0;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  padding-right: 3rem;
+  margin-top: 0.6rem;
+  
+
+}
+#footer .container .social a{
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 1rem;
+ 
+}
+
+
+
+
