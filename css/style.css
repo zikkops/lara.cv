@@ -128,14 +128,13 @@ body {
   margin-top: -20px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .first-banner h2 {
   color: white;
-  transform: rotate(-1deg);
+  padding-top: 20px;
 }
 /* balls */
 #balls-container {
@@ -239,14 +238,12 @@ body {
   margin-top: 20px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .second-banner h2 {
   color: white;
-  transform: rotate(-1deg);
 }
 
 .left-graph,
@@ -372,14 +369,12 @@ body {
   height: 80px;
   margin-left: -5vw;
   text-align: center;
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .third-banner h2 {
   color: white;
-  transform: rotate(-1deg);
 }
 .logos-container {
   position: relative;
@@ -530,14 +525,12 @@ footer {
   margin-top: -42px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-first-banner h2 {
   color: white;
-  transform: rotate(-1deg);
   font-size: 1rem;
 }
 #about-second {
@@ -570,14 +563,12 @@ footer {
   margin-top: -42px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-second-banner h2 {
   color: white;
-  transform: rotate(-1deg);
   font-size: 1rem;
 }
 #about-third {
@@ -611,14 +602,12 @@ footer {
   margin-top: -42px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-third-banner h2 {
   color: white;
-  transform: rotate(-1deg);
   font-size: 1rem;
 }
 #about-fourth {
@@ -654,14 +643,14 @@ footer {
   margin-top: -62px;
   text-align: center;
   /* padding-top: 25px; */
-  transform: rotate(1deg);
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-fourth-banner h2 {
   color: white;
-  transform: rotate(-1deg);
+
   font-size: 1rem;
 }
 #fifth-about h1 {
