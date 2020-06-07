@@ -536,8 +536,10 @@ footer {
 }
 #about-second {
   width: 100vw;
-  height: 100vh;
   position: relative;
+  display: block;
+  height: 100vh;
+  max-height: 650px;
 }
 #about-second img {
   position: absolute;
@@ -578,6 +580,8 @@ footer {
 #about-third {
   width: 100vw;
   height: 90vh;
+
+  max-height: 650px;
   position: relative;
 }
 #about-third img {
@@ -620,6 +624,8 @@ footer {
 #about-fourth {
   width: 100vw;
   height: 100vh;
+
+  max-height: 650px;
   position: relative;
 }
 #about-fourth img {
@@ -733,7 +739,7 @@ footer {
 .main-logo img {
   width: 300px;
   margin-left: 35%;
-  padding: 30px 0;
+  padding-top: 30px;
   transition: all 0.5s ease-in-out;
   animation: bounce 4s infinite;
 }
@@ -741,7 +747,7 @@ footer {
   display: block;
   margin-left: 50%;
   transform: translate(-150%);
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
   font-size: 0.8rem;
   color: transparent;
@@ -796,7 +802,7 @@ footer {
 .main-logo2 img {
   width: 300px;
   margin-left: 35%;
-  padding: 30px 0;
+  padding-top: 30px;
   transition: all 0.5s ease-in-out;
   animation: bounce 4s infinite;
 }
@@ -804,7 +810,7 @@ footer {
   display: block;
   margin-left: 50%;
   transform: translate(-150%);
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
   font-size: 0.8rem;
   color: transparent;
@@ -1005,8 +1011,6 @@ footer {
 #form-left {
   width: 50vw;
   min-width: 400px;
-  padding-left: 10vw;
-  padding-top: 70px;
   background: lightgrey;
   height: 86vh;
 }
@@ -1016,9 +1020,15 @@ footer {
 #form-right {
   width: 50vw;
   min-width: 400px;
-  padding-top: 70px;
 
   height: 84vh;
+}
+#form-right,
+#form-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 50px; */
 }
 #form-right h1 {
   text-align: center;
