@@ -38,7 +38,7 @@
             Middle-East; catering to their needs as an English/Arabic
             copywriter, translator, and creative writer.
           </p>
-          <button>My Story</button>
+          <!-- <a href="#about-second">My Story</a> -->
         </div>
       </div>
       <div id="about-second">
@@ -129,10 +129,15 @@
     <footer>
       <div id="footer-container">
         <div class="footer-container-1">
-          <h3>
-            Leave Your Mark On The World!<br />
-            I'll Help You Do It!
-          </h3>
+          <div class="footer-container-left">
+            <h3>
+              Leave Your Mark On The World!<br />
+              I'll Help You Do It!
+            </h3>
+            <div id="copyright">
+              <h6>&copy;copyright Lara haidamous ,2020</h6>
+            </div>
+          </div>
           <ul>
             <li>
               <button>
@@ -149,17 +154,36 @@
             </li>
           </ul>
           <div class="footer-container-2">
-            <p>Email: Lara.haidamous@hotmail.co.uk</p>
-            <p>Number: +961 71 516746</p>
+            <p>Email Lara.haidamous@hotmail.co.uk</p>
+            <p>Number +961 71 516746</p>
+            <div id="credits">
+              <h6>Developed By Mark Zakkak</h6>
+            </div>
           </div>
         </div>
       </div>
-      <div id="copyright">
-        <h6>&copy;copyright Lara haidamous ,2020</h6>
-      </div>
-      <div id="credits">
-        <h6>Developed By Mark Zakkak</h6>
-      </div>
     </footer>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Smooth Scrolling
+      $("#navbar a, .btn").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            800
+          );
+        }
+      });
+    </script> -->
   </body>
 </html>

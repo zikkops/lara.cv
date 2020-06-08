@@ -144,7 +144,8 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .spec-container {
   height: 200px;
@@ -178,23 +179,12 @@ body {
   padding-top: 10px;
 }
 
-#twitter {
-  height: 30px;
-  position: absolute;
-  left: 20px;
-  top: 80px;
-}
 #insta {
-  height: 30px;
-  position: absolute;
-  left: 60px;
-  top: 20px;
+  height: 60px;
+  margin-top: 50%;
+  transform: translatey(-50%);
 }
-#facebook {
-  position: absolute;
-  right: 20px;
-  top: 70px;
-}
+
 #branding {
   height: 60px;
   margin-top: 50%;
@@ -251,20 +241,21 @@ body {
 .right-graph {
   width: 450px;
   position: relative;
-  height: 310px;
-  margin-top: 20px;
+  height: 360px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .row {
   width: 90%;
-  height: 30px;
+  height: 40px;
   /* background: blue; */
   border-radius: 20px;
   color: white;
   margin-top: 20px;
 }
 .row h5 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 10px;
 }
 .row h6 {
@@ -274,7 +265,7 @@ body {
 }
 .column {
   width: 1px;
-  height: 80%;
+  height: 83%;
   background: black;
   position: absolute;
   bottom: 0;
@@ -341,7 +332,7 @@ body {
 }
 .right-graph .row h5 {
   line-height: 1.2;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 .right-graph .row-1 {
   padding-top: 5px;
@@ -383,9 +374,9 @@ body {
   margin-left: 5vw;
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 60px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .logos-container img {
   width: 70px;
@@ -467,15 +458,10 @@ footer {
   padding-top: 12px;
 }
 #copyright {
-  position: absolute;
-  bottom: 0;
-  left: 10vw;
+  margin-left: 10px;
   color: rgb(207, 207, 207);
 }
 #credits {
-  position: absolute;
-  bottom: 0;
-  right: 10vw;
   color: rgb(207, 207, 207);
 }
 /* about me */
@@ -499,7 +485,11 @@ footer {
 #about-first-container p {
   font-weight: 300;
 }
-#about-first-container button {
+#about-first-container a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
   background: transparent;
   width: 160px;
   padding: 5px;
@@ -510,6 +500,7 @@ footer {
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 #about-first-container button:hover {
   background: black;
@@ -558,7 +549,7 @@ footer {
   padding: 20px;
 }
 #start-story p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 /* third about */
 .about-second-banner {
@@ -586,7 +577,7 @@ footer {
 }
 #about-third img {
   position: absolute;
-  height: 90vh;
+  height: 80vh;
   left: 0;
   top: 40px;
   z-index: -2;
@@ -602,7 +593,7 @@ footer {
   padding: 20px;
 }
 #second-story p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 /* fourth about */
 .about-third-banner {
@@ -645,7 +636,7 @@ footer {
   padding: 20px;
 }
 #end-story p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 /* fifth about */
 #fifth-about {
@@ -693,7 +684,10 @@ footer {
 #first-edu {
   height: 98vh;
   width: 100vw;
-  background: url(/img/experiance-first.jpg) center center/cover;
+  background: url(/img/experiance-bg.jpg) center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #first-edu img {
   position: absolute;
@@ -702,13 +696,9 @@ footer {
   z-index: -3px;
 }
 #first-edu h1 {
-  width: 600px;
-  position: absolute;
-  top: 42%;
+  padding-top: 40px;
   text-align: center;
   font-size: 1.4rem;
-  left: 50%;
-  transform: translate(-50%);
 }
 /* second edu */
 .edu-banner {
@@ -723,123 +713,135 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .edu-banner h2 {
   color: white;
   padding-top: 10px;
+  width: 100%;
 }
-.work-container {
-  width: 100vw;
+#second-edu {
+  display: inline-block;
+  height: 90vh;
+}
+#full-container {
+  display: block;
   position: relative;
-}
-.main-logo {
   width: 100vw;
-  margin-top: 100px;
+}
+
+.work-container1 {
+  width: 32vw;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 2;
   transition: all 0.5s ease-in-out;
+}
+.work-container2 {
+  width: 32vw;
+  position: absolute;
+  display: block;
+  left: 33vw;
+  top: 50px;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2px;
+}
+.work-container3 {
+  width: 32vw;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 50px;
+  transition: all 0.5s ease-in-out;
+  margin-top: 2px;
+}
+.work-container1:hover {
+  width: 100vw;
+  z-index: 2;
+  background: rgb(71, 71, 71);
+}
+.work-container2:hover {
+  width: 100vw;
+  z-index: 2;
+  left: 0;
+  background: rgb(71, 71, 71);
+}
+.work-container3:hover {
+  width: 100vw;
+  z-index: 2;
+  background: rgb(71, 71, 71);
+}
+.work-container1:hover .omg-text {
+  color: white;
+}
+.work-container2:hover .omg-text {
+  color: white;
+}
+.work-container3:hover .omg-text {
+  color: white;
+}
+.work-container1:hover .main-logo img {
+  animation: none;
+}
+.work-container2:hover .main-logo img {
+  animation: none;
+}
+.work-container3:hover .main-logo img {
+  animation: none;
+}
+
+.main-logo {
+  width: 300px;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 .main-logo img {
   width: 300px;
-  margin-left: 35%;
-  padding-top: 30px;
-  transition: all 0.5s ease-in-out;
-  animation: bounce 4s infinite;
+  padding: 40px 0;
+  animation: bounce 2s infinite;
 }
-.main-logo .omg-text {
-  display: block;
-  margin-left: 50%;
-  transform: translate(-150%);
-  padding-top: 10px;
-  padding-bottom: 40px;
-  font-size: 0.8rem;
+.omg-text {
+  width: 50vw;
+  margin-left: -50% !important;
+  padding-bottom: 50px;
   color: transparent;
-  transition: all 0.5s ease-in-out;
 }
-.omg-text img {
-  width: 20px;
-  height: 20px;
-  margin-left: 0;
+.omg-text h2 {
+  font-size: 1.3rem;
 }
-
-.main-logo:hover {
-  background: grey;
+.omg-text h5 {
+  font-size: 0.6rem;
 }
-.main-logo:hover:nth-child(2) {
-  background: #a3055f;
-}
-.main-logo:hover > img {
-  /* margin-left: 5%; */
-  /* transform: translate(0); */
-  animation: none;
-}
-.main-logo:hover > .omg-text {
-  color: black;
-  transform: translate(-50%);
-}
-.main-logo:hover > .omg-text .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.omg-text p {
+  font-size: 1rem;
 }
 
-.arrow {
-  border: solid transparent;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transition: all 0.5s ease-in-out;
-}
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-/* nth child 2 */
-
-.main-logo2 {
-  width: 100vw;
-  margin-top: 100px;
-  transition: all 0.5s ease-in-out;
-}
-.main-logo2 img {
-  width: 300px;
-  margin-left: 35%;
-  padding-top: 30px;
-  transition: all 0.5s ease-in-out;
-  animation: bounce 4s infinite;
-}
-.main-logo2 .omg-text2 {
-  display: block;
-  margin-left: 50%;
-  transform: translate(-150%);
-  padding-top: 10px;
-  padding-bottom: 40px;
-  font-size: 0.8rem;
-  color: transparent;
-  transition: all 0.5s ease-in-out;
-}
-.omg-text2 img {
-  width: 20px;
-  height: 20px;
-  margin-left: 0;
-}
-
-.main-logo2:hover {
-  background: #a3055f;
-}
-
-.main-logo2:hover > img {
-  /* margin-left: 5%; */
-  /* transform: translate(0); */
-  animation: none;
-}
-.main-logo2:hover > .omg-text2 {
-  color: white;
-  transform: translate(-50%);
-}
-.main-logo2:hover > .omg-text2 .arrow {
+.work-container2:hover .arrow {
   border: solid white;
+
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+.work-container3:hover .arrow {
+  border: solid white;
+
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+.work-container1:hover .arrow {
+  border: solid white;
+
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -871,10 +873,6 @@ footer {
   }
 }
 
-.work-container:last-child {
-  margin-bottom: 100px;
-}
-
 /* education */
 #edu-first {
   position: relative;
@@ -887,12 +885,10 @@ footer {
   position: relative;
   padding-left: 5vw;
   padding-top: 20%;
-  width: 473px;
+  width: 480px;
   font-size: 0.7rem;
 }
 .edu-title h6 {
-  position: absolute;
-  right: 0;
   font-size: 0.7rem;
 }
 .edu-banner1 {
@@ -999,7 +995,6 @@ footer {
 #contact-page {
   width: 100vw;
 
-  /* background: url(/img/contact-bg.png) center center/cover; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1012,7 +1007,6 @@ footer {
   width: 50vw;
   min-width: 400px;
   background: lightgrey;
-  height: 86vh;
 }
 #form-left h1 {
   line-height: 1.2;
@@ -1021,14 +1015,14 @@ footer {
   width: 50vw;
   min-width: 400px;
 
-  height: 84vh;
+  background: url(/img/experiance-first.jpg) center center/cover;
 }
 #form-right,
 #form-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-top: 50px; */
+  height: 98vh;
 }
 #form-right h1 {
   text-align: center;
@@ -1067,6 +1061,9 @@ footer {
   font-weight: 300;
   padding-top: 100px;
 }
+#info-container span {
+  font-weight: bold;
+}
 
 /* form animation */
 
@@ -1078,7 +1075,10 @@ footer {
 }
 .content-name {
   color: black;
+  font-size: 1rem;
+  font-weight: 400;
 }
+
 .form input {
   width: 100%;
   height: 100%;
@@ -1125,10 +1125,6 @@ footer {
   left: 0px;
   transition: all 0.3s ease;
 }
-.message {
-  color: black !important;
-  font-weight: normal !important;
-}
 
 .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
@@ -1149,15 +1145,17 @@ footer {
   color: #a3055f;
 }
 .big-box {
-  height: 100px;
+  height: 170px;
   /* margin-top: -20px; */
 }
 .big-box textarea {
-  height: 70px;
+  height: 130px;
 }
 .big-box .content-name {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
+}
+.message {
 }
 #submit-btn {
   display: block;
@@ -1179,4 +1177,7 @@ footer {
 #submit-btn:hover {
   background-color: #a3055f;
   color: white;
+}
+.arrow {
+  transform: rotate(-45deg);
 }
