@@ -1435,6 +1435,15 @@ footer {
   .right-graph {
     width: 300px !important;
   }
+  .left-graph h6,
+  .right-graph h6 {
+    font-size: 0.55rem !important;
+  }
+  .third-banner {
+    width: 100vw;
+    margin-left: 0;
+  }
+
   .row h5 {
     font-size: 0.6rem !important;
   }
@@ -1465,7 +1474,7 @@ footer {
   }
   /* about */
   .about-first-banner h2 {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     width: 90%;
     padding-left: 5%;
   }
@@ -1503,8 +1512,14 @@ footer {
     width: 100vw;
   }
   /* experiance */
+
   #second-edu {
     display: flex;
+    overflow-x: hidden;
+  }
+
+  #first-edu h1 {
+    width: 80%;
   }
   #full-container {
     display: block;
@@ -1515,9 +1530,39 @@ footer {
     height: fit-content;
     padding-bottom: 50px;
   }
+  /* test containers */
+
+  .work-container2 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .work-container3 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .work-container1 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+
   .work-container1 {
     width: 100vw;
-    background-color: grey;
+    background-color: rgb(71, 71, 71);
     position: relative;
     margin-bottom: 40px;
   }
@@ -1527,7 +1572,7 @@ footer {
     display: block;
     position: relative;
     left: 0;
-    background-color: grey;
+    background-color: rgb(71, 71, 71);
     margin-bottom: 40px;
   }
   .work-container3 {
@@ -1535,7 +1580,7 @@ footer {
     display: block;
     position: relative;
 
-    background-color: grey;
+    background-color: rgb(71, 71, 71);
     margin-bottom: 40px;
   }
   .work-container1 img {
