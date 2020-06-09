@@ -689,13 +689,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 #first-edu img {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  z-index: -3px;
+  display: none;
 }
+
 #first-edu h1 {
   padding-top: 40px;
   text-align: center;
@@ -1623,11 +1622,27 @@ footer {
   }
   /* education */
   #first-edu {
-    background: url(/img/experiance-bg.jpg) center center/cover;
+    background: none;
+  }
+  #img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #first-edu img {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -3;
   }
   #edu-container h2 {
     width: 100vw;
     padding: 0 20px;
+    z-index: 30;
   }
   #edu-container h5 {
     width: 100vw;
