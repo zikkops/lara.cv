@@ -1394,6 +1394,9 @@ footer {
   .footer-container-left h3 {
     font-size: 0.6rem;
   }
+  .current::after {
+    display: none;
+  }
   #copyright {
     font-size: 0.7rem !important;
   }
