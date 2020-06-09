@@ -1387,7 +1387,214 @@ footer {
 #menu1Toggle input:checked ~ ul {
   transform: none;
 }
+/* ipad reponsive */
 
+@media all and (max-width: 1024px) {
+  /* home - navbar - footer */
+
+  .current::after {
+    display: none;
+  }
+
+  .omg-text p {
+    overflow-x: hidden;
+  }
+  .spec-container {
+    margin-top: 20px;
+  }
+
+  #logo {
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    z-index: 10;
+    transform: translate(50%);
+  }
+  #navbar {
+    height: 70px;
+  }
+  #navbar ul {
+    text-align: center;
+  }
+  .navbar-hidden {
+    display: none;
+  }
+  .toggle-invisible {
+    display: block !important;
+  }
+  /* about */
+
+  .about-second-banner h2 {
+    font-size: 0.7rem;
+    width: 90%;
+    padding-left: 5%;
+  }
+  #about-third img {
+    height: 600px;
+  }
+  /* experiance */
+
+  #second-edu {
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  #first-edu h1 {
+    width: 80%;
+  }
+  #full-container {
+    display: block;
+
+    height: fit-content;
+  }
+  #second-edu {
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  /* test containers */
+
+  .work-container2 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .work-container3 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .work-container1 .arrow {
+    border: solid white;
+
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .work-container1 {
+    width: 100vw;
+    background-color: rgb(71, 71, 71);
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .work-container2 {
+    width: 100vw;
+    display: block;
+    position: relative;
+    left: 0;
+    background-color: rgb(71, 71, 71);
+    margin-bottom: 40px;
+  }
+  .work-container3 {
+    width: 100vw;
+    display: block;
+    position: relative;
+
+    background-color: rgb(71, 71, 71);
+    margin-bottom: 40px;
+  }
+  .work-container1 img {
+    animation: none;
+  }
+  .work-container2 img {
+    animation: none;
+  }
+  .work-container3 img {
+    animation: none;
+  }
+  .main-logo {
+    width: 80vw;
+  }
+  .main-logo img {
+    margin-left: 50%;
+    transform: translatex(-50%);
+  }
+  .main-logo .omg-text {
+    margin-left: 50% !important;
+    transform: translatex(-50%);
+  }
+  .omg-text {
+    width: 65vw;
+    display: block;
+    margin-left: 0;
+    color: white;
+  }
+  .omg-text h2 {
+    width: 65vw;
+    font-size: 0.9rem;
+  }
+  .omg-text h5 {
+    width: 65vw;
+    font-size: 0.7rem;
+  }
+  .omg-text p {
+    width: 65vw;
+    font-size: 0.8rem;
+  }
+  /* education */
+  #first-edu {
+    background: none;
+  }
+  #img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  #first-edu img {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -3;
+  }
+  #edu-container h2 {
+    width: 100vw;
+    padding: 0 20px;
+    z-index: 30;
+  }
+  #edu-container h5 {
+    width: 100vw;
+    padding: 0 20px;
+  }
+  #edu-container h3 {
+    width: 100vw;
+    padding: 0 20px;
+  }
+  #edu-container p {
+    width: 100vw;
+    padding: 0 20px;
+  }
+  .edu-text-left,
+  .edu-text-right {
+    width: 100vw;
+    min-width: 0;
+    margin-left: 0;
+    padding: 40px 0;
+  }
+  .edu-title {
+    width: 300px;
+    padding-top: 45vh;
+  }
+
+  .edu-title h1 {
+    width: 300px;
+  }
+  /* contact */
+}
 /* responsivity */
 @media all and (max-width: 768px) {
   /* home - navbar - footer */
@@ -1675,10 +1882,19 @@ footer {
     width: 300px;
   }
   /* contact */
+  .form-container {
+    width: 70%;
+  }
   #form-left {
-    width: 100%;
+    width: 100vw;
+    order: 2;
   }
   #form-right {
-    width: 100%;
+    width: 100vw;
+  }
+  .form-container h1 {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
   }
 }
