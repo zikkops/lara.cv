@@ -1622,6 +1622,9 @@ footer {
     font-size: 0.8rem;
   }
   /* education */
+  #first-edu {
+    background: url(/img/experiance-bg.jpg) center center/cover;
+  }
   #edu-container h2 {
     width: 100vw;
     padding: 0 20px;
